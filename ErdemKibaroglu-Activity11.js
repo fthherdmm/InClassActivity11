@@ -22,8 +22,8 @@ $(document).ready(function () {
                 $("main").html(newContent);
             })
             .fail(function () {
-                console.error("JSON yüklenemedi:", filePath);
-                $("main").html("<p>Konuşmacı bilgileri yüklenemedi.</p>");
+                console.error("JSON cannot be loaded:", filePath);
+                $("main").html("<p>Speaker information cannot be loaded.</p>");
             });
     });
 });
